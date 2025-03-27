@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "E:/new code of 2025/FPGA/.MY CODE/D_flipflop/D_FF.xst" -ofn "E:/new code of 2025/FPGA/.MY CODE/D_flipflop/D_FF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 "D_FF.ngc" D_FF.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o D_FF_map.ncd D_FF.ngd D_FF.pcf 
+par -w -intstyle ise -ol high -mt off D_FF_map.ncd D_FF.ncd D_FF.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml D_FF.twx D_FF.ncd -o D_FF.twr D_FF.pcf 
+xst -intstyle ise -ifn "E:/new code of 2025/FPGA/.MY CODE/D_flipflop/D_FF.xst" -ofn "E:/new code of 2025/FPGA/.MY CODE/D_flipflop/D_FF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 "D_FF.ngc" D_FF.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o D_FF_map.ncd D_FF.ngd D_FF.pcf 
+par -w -intstyle ise -ol high -mt off D_FF_map.ncd D_FF.ncd D_FF.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml D_FF.twx D_FF.ncd -o D_FF.twr D_FF.pcf 
+xst -intstyle ise -ifn "E:/new code of 2025/FPGA/.MY CODE/D_flipflop/D_FF.xst" -ofn "E:/new code of 2025/FPGA/.MY CODE/D_flipflop/D_FF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 "D_FF.ngc" D_FF.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o D_FF_map.ncd D_FF.ngd D_FF.pcf 
+par -w -intstyle ise -ol high -mt off D_FF_map.ncd D_FF.ncd D_FF.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml D_FF.twx D_FF.ncd -o D_FF.twr D_FF.pcf 
