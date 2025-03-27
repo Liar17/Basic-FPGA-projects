@@ -1,2 +1,2 @@
 # Basic-FPGA-projects
-Basic FPGA
+Basic VHDL
