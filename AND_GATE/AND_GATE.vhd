@@ -1,0 +1,34 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date:    05:14:37 03/26/2025 
+-- Design Name: 
+-- Module Name:    AND_GATE - Behavioral 
+-- Project Name: 
+-- Target Devices: 
+-- Tool versions: 
+-- Description: 
+--
+-- Dependencies: 
+--
+-- Revision: 
+-- Revision 0.01 - File Created
+-- Additional Comments: 
+--
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity AND_Gate is
+    Port ( A : in STD_LOGIC;
+           B : in STD_LOGIC;
+           Y : out STD_LOGIC);
+end AND_Gate;
+
+
+architecture Behavioral of AND_Gate is
+begin
+    Y <= A and B; -- Implementation of And Gate
+end Behavioral;

@@ -1,0 +1,18 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o E:/new code of 2025/FPAGA/AND/AND_TB_isim_beh.exe -prj E:/new code of 2025/FPAGA/AND/AND_TB_beh.prj work.AND_TB 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "E:/new code of 2025/FPAGA/AND/AND_GATE.vhd" into library work
+Parsing VHDL file "E:/new code of 2025/FPAGA/AND/AND_TB.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity AND_Gate [and_gate_default]
+Compiling architecture test of entity and_tb
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable E:/new code of 2025/FPAGA/AND/AND_TB_isim_beh.exe
+Fuse Memory Usage: 30404 KB
+Fuse CPU Usage: 530 ms

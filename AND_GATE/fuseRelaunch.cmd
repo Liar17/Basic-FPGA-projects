@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/new code of 2025/FPAGA/AND/AND_TB_isim_beh.exe" -prj "E:/new code of 2025/FPAGA/AND/AND_TB_beh.prj" "work.AND_TB" 
