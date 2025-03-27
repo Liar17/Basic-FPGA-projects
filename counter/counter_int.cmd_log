@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "E:/new code of 2025/FPAGA/counter/counter_int.xst" -ofn "E:/new code of 2025/FPAGA/counter/counter_int.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 "counter_int.ngc" counter_int.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter_int_map.ncd counter_int.ngd counter_int.pcf 
+par -w -intstyle ise -ol high -mt off counter_int_map.ncd counter_int.ncd counter_int.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml counter_int.twx counter_int.ncd -o counter_int.twr counter_int.pcf 
+xst -intstyle ise -ifn "E:/new code of 2025/FPAGA/counter/counter_int.xst" -ofn "E:/new code of 2025/FPAGA/counter/counter_int.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 "counter_int.ngc" counter_int.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o counter_int_map.ncd counter_int.ngd counter_int.pcf 
+par -w -intstyle ise -ol high -mt off counter_int_map.ncd counter_int.ncd counter_int.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml counter_int.twx counter_int.ncd -o counter_int.twr counter_int.pcf 
+vhdtdtfi -lib work cnt.vhd -prj counter -o counter_int.spl -module counter_int -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 counter_int.spl {E:/new code of 2025/FPAGA/counter/counter_int.sym} 
+vhdtdtfi -prj counter -o "E:/new code of 2025/FPAGA/counter/counter_int.vhi" -module counter_int -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work cnt.vhd 

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/new code of 2025/FPAGA/counter/counter_tb_isim_beh.exe" -prj "E:/new code of 2025/FPAGA/counter/counter_tb_beh.prj" "work.counter_tb" 
