@@ -1,0 +1,2 @@
+vhdl isim_temp "DFF_Reset.vhd"
+vhdl isim_temp "DFF_Reset_TB.vhd"

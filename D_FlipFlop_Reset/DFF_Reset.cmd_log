@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/new code of 2025/FPGA/.MY CODE/DFF_Reset/DFF_Reset.xst" -ofn "E:/new code of 2025/FPGA/.MY CODE/DFF_Reset/DFF_Reset.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 "DFF_Reset.ngc" DFF_Reset.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DFF_Reset_map.ncd DFF_Reset.ngd DFF_Reset.pcf 
+par -w -intstyle ise -ol high -mt off DFF_Reset_map.ncd DFF_Reset.ncd DFF_Reset.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml DFF_Reset.twx DFF_Reset.ncd -o DFF_Reset.twr DFF_Reset.pcf 

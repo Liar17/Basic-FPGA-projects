@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/new code of 2025/FPGA/.MY CODE/DFF_Reset/DFF_Reset_TB_isim_beh.exe" -prj "E:/new code of 2025/FPGA/.MY CODE/DFF_Reset/DFF_Reset_TB_beh.prj" "work.DFF_Reset_TB" 
