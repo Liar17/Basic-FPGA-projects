@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "E:/new code of 2025/FPGA/.MY CODE/JK_FlipFlop/JKFF_TB_isim_beh.exe" -prj "E:/new code of 2025/FPGA/.MY CODE/JK_FlipFlop/JKFF_TB_beh.prj" "work.JKFF_TB" 

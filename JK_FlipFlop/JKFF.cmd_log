@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/new code of 2025/FPGA/.MY CODE/JK_FlipFlop/JKFF.xst" -ofn "E:/new code of 2025/FPGA/.MY CODE/JK_FlipFlop/JKFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 "JKFF.ngc" JKFF.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o JKFF_map.ncd JKFF.ngd JKFF.pcf 
+par -w -intstyle ise -ol high -mt off JKFF_map.ncd JKFF.ncd JKFF.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml JKFF.twx JKFF.ncd -o JKFF.twr JKFF.pcf 
