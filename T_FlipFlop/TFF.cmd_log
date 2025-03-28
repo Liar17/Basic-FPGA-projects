@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/new code of 2025/FPGA/.MY CODE/T_FlipFlop/TFF.xst" -ofn "E:/new code of 2025/FPGA/.MY CODE/T_FlipFlop/TFF.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx4-tqg144-2 "TFF.ngc" TFF.ngd  
+map -intstyle ise -p xc6slx4-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o TFF_map.ncd TFF.ngd TFF.pcf 
+par -w -intstyle ise -ol high -mt off TFF_map.ncd TFF.ncd TFF.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml TFF.twx TFF.ncd -o TFF.twr TFF.pcf 
